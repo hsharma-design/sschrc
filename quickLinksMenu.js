@@ -7,6 +7,7 @@ var menuAnimationRunning = false;
 // Button and Menu elements.
 var quickLinksButton = document.getElementsByClassName("qlmenu-menubutton")[0];
 var quickLinksMenu = document.getElementsByClassName("qlmenu")[0];
+var quickLinksMenuBackground = document.getElementsByClassName("qlmenu-background")[0];
 
 quickLinksButton.onclick = function() {
   if (!menuAnimationRunning) {
@@ -24,6 +25,8 @@ quickLinksButton.onclick = function() {
     }
   }
 };
+
+quickLinksMenuBackground.onclick = quickLinksButton.onclick();
 
 function fadeOutComplete() {
   quickLinksMenu.classList.add("qlmenu-hide");
