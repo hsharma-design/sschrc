@@ -4,6 +4,7 @@ var menuOpened = false;
 // Is menu currently animating to open/close. Used to disable further clicks when animating.
 var menuAnimationRunning = false;
 
+// Button and Menu elements.
 var quickLinksButton = document.getElementsByClassName("qlmenu-menubutton")[0];
 var quickLinksMenu = document.getElementsByClassName("qlmenu")[0];
 
